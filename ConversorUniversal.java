@@ -43,8 +43,8 @@ public class ConversorUniversal extends JFrame{
 		   JMenu menu2 = new JMenu("Editar");
 		   JMenu menu3 = new JMenu("Ajuda");
 		   JMenuItem teste = new JMenuItem("Arquivo1", KeyEvent.VK_S);
-		   JMenuItem teste1 = new JMenuItem("Conteúdo Editado", KeyEvent.VK_S);
-		   JMenuItem teste2 = new JMenuItem("Materia de Ajuda", KeyEvent.VK_S);
+		   JMenuItem teste1 = new JMenuItem("ConteÃºdo Editado", KeyEvent.VK_S);
+		   JMenuItem teste2 = new JMenuItem("Material de Ajuda", KeyEvent.VK_S);
 		   menu1.add(teste);
 		   menu2.add(teste1);
 		   menu3.add(teste2);

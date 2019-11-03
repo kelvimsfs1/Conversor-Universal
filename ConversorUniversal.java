@@ -17,9 +17,9 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
-public class NewClass extends JFrame{
+public class ConversorUniversal extends JFrame{
 	
-	public NewClass() {
+	public ConversorUniversal() {
         JPanel painel = new JPanel();
         
         
@@ -34,14 +34,20 @@ public class NewClass extends JFrame{
 		
 	}
       
-	
+	   ////
 	   private void configureMenu() {
 		   JMenuBar bar = new JMenuBar();
 		   setJMenuBar(bar);
 		   
-		   JMenu menu1 = new JMenu("Olha essa bagaça");
-		   JMenuItem teste = new JMenuItem("Arquivo  Editar  Ajuda", KeyEvent.VK_S);
+		   JMenu menu1 = new JMenu("Arquivo");
+		   JMenu menu2 = new JMenu("Editar");
+		   JMenu menu3 = new JMenu("Ajuda");
+		   JMenuItem teste = new JMenuItem("Arquivo1", KeyEvent.VK_S);
+		   JMenuItem teste1 = new JMenuItem("Conteúdo Editado", KeyEvent.VK_S);
+		   JMenuItem teste2 = new JMenuItem("Materia de Ajuda", KeyEvent.VK_S);
 		   menu1.add(teste);
+		   menu2.add(teste1);
+		   menu3.add(teste2);
 		   
 		   JPanel moeda = new JPanel();
 		   moeda.setLayout(null);
@@ -367,14 +373,15 @@ public class NewClass extends JFrame{
 		   comprimento.add(labelMed1);
 		   
 		   add(tab);
-		   bar.add(teste);
-		   
+		   bar.add(menu1);
+		   bar.add(menu2);
+		   bar.add(menu3);
 	   }
 		
 	
 
 	public static void main(String[] args) {
-		new NewClass();
+		new ConversorUniversal();
 	}
 
 }
